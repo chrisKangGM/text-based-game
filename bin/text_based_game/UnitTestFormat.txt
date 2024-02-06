@@ -1,0 +1,24 @@
+public static void test() {
+    String methodName = /*something*/;
+    boolean allTestsPassed = true;
+    /*int caseNumber = 1;  //if there are several cases */
+
+    String expected;
+    String actual;
+
+    { //CASE #1: /*description about the testing*/
+
+        expected = /*something*/;
+        actual   = /*something*/;
+
+        if (!Testing.actualMatchesExpected(actual, expected)) { 
+            Testing.printErrorMessage(methodName, actual, expected);
+            allTestsPassed = false;
+        }
+        /*caseNumber++ //if there are several cases */
+    }
+    
+    if (allTestsPassed) {
+        Testing.printAllTestsPassed(methodName);
+    }
+}
